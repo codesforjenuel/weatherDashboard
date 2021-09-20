@@ -44,7 +44,7 @@ localStorage.setItem("myCity",cityReturn)
    cityDiv.append(storageDisplay)
  storageDisplay.addEventListener("click", () => {
 
-      let api = `https://api.weatherapi.com/v1/forecast.json?key=3ef0c6e33fa943f4805232459211609&q=${input.value}&days=6&aqi=no&alerts=no`
+      let api = `https://api.weatherapi.com/v1/forecast.json?key=3ef0c6e33fa943f4805232459211609&q=${storageDisplay.textContent}&days=6&aqi=no&alerts=no`
  
 
 
@@ -111,6 +111,6 @@ currentDate.textContent = data.forecast.forecastday[0].date
 
 }
 else {
-   storeAge = null
+   storeAge = false
 } 
 
