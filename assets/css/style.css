@@ -1,0 +1,83 @@
+header {
+    display: flex;
+justify-content: center;
+align-items: center;
+    background: linear-gradient(rgb(18, 160, 255),rgb(0, 124, 128));
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+}
+
+.citySearch {
+    display: flex;
+    flex-direction: column;
+height: 1000px;
+}
+
+.cityInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+}
+.weatherMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgb(12, 147, 201);
+    height: 400px;
+    width: 100%;
+}
+
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(12, 147, 201);
+    height: 400px;
+    width: 300px;
+}
+Button {
+    background: linear-gradient(rgb(18, 160, 255),rgb(0, 124, 128));
+    font-weight: bold;
+    height: 30px;
+    width: 400px;
+margin: 10px;
+}
+
+.searchButton {
+    background:rgb(16, 227, 235)
+}
+
+input {
+    height: 30px;
+    width: 390px;
+    margin: 10px;
+}
+.fiveDay {
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
