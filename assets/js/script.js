@@ -1,3 +1,5 @@
+
+//variables were created to connect html with javascript
 const searchBtn = document.querySelector(".searchButton");
 const input = document.querySelector("input")
 let city = document.querySelector(".displayCity")
@@ -37,7 +39,7 @@ let storeAge = localStorage.getItem("myCity");
 
 
 
-
+//In this even listener 2 APIs were used to receive the information necesary to make the dashboard funcional
 searchBtn.addEventListener("click", ()=> {
    let api = `https://api.weatherapi.com/v1/forecast.json?key=3ef0c6e33fa943f4805232459211609&q=${input.value}&days=6&aqi=no&alerts=no`
  
@@ -107,13 +109,13 @@ currentDate.textContent = data.forecast.forecastday[0].date
 
 
    let cityReturn = city.textContent = data.location.name
-   
+   //here I used localStorage to save the last searched city for better user experience
    localStorage.setItem("myCity",cityReturn)
 
 
 
 
-
+//this variable is used to create a button of every searched by the city 
    let storageDisplay = document.createElement("button")
    storageDisplay.textContent = input.value
    cityDiv.append(storageDisplay)
